@@ -3,7 +3,7 @@ addons:
   sonarcloud:
     organization: "acoudray1-github" # the key of the org you chose at step #3
     token:
-      secure: "f661337fa154e63b0ecc90a1be25fc96fe979b6a" # encrypted value of your token
+      secure: SONAR_TOKEN # encrypted value of your token
 
 script: 
 # other script steps might be done before running the actual analysis
