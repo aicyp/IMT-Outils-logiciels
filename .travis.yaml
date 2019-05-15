@@ -6,8 +6,7 @@ addons:
       secure: SONAR_TOKEN # encrypted value of your token
 
 script: 
-# other script steps might be done before running the actual analysis
-  - sonar-scanner
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - mvn test -B
   - mvn package
+  - sonar-scanner
